@@ -6,21 +6,39 @@
 //  Copyright (c) 2014 Simple Guy. All rights reserved.
 //
 
+// Bring in UIKit, which is part of Cocoa Touch
 import UIKit
 
-@UIApplicationMain
+
+@UIApplicationMain // This is some kind of attribute. I think it specifies this method as the entry point. Not sure what it means: http://stackoverflow.com/questions/24020000/subclass-uiapplication-with-swift
+
+// Create a class with a superclass `UIResponder`
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
-  var window: UIWindow?
+  var window: UIWindow? // Declare, but do not initialize, a variable of type `Optional UIWindow`
+  // The UIWindow is at the top of the view heirarchy
 
-
+  
+  // The application object manages the app event loop and coordinates other high-level app behaviors. This class, defined in the UIKit framework, doesn’t require you to write any additional code to get it to do its job.
+  
+  // As your app starts up, the application object calls defined methods on the app delegate to give your custom code a chance to do its job—that’s where the interesting behavior for an app is executed.
+  
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
-    self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+  
+    
+    // Initialize a UI Window
+//    self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+    
     // Override point for customization after application launch.
-    self.window!.backgroundColor = UIColor.whiteColor()
-    self.window!.makeKeyAndVisible()
+//    self.window!.backgroundColor = UIColor.greenColor() //UIColor.whiteColor()
+//    self.window!.makeKeyAndVisible()
+    
+    
+    
     return true
   }
+  
+  
 
   func applicationWillResignActive(application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0732E6EB19451DE3004E153F /* XYZToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0732E6EA19451DE3004E153F /* XYZToDoItem.swift */; };
+		0732E6ED19452398004E153F /* testTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0732E6EC19452398004E153F /* testTableViewController.swift */; };
+		07B70F921944259F009E6D29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B70F911944259F009E6D29 /* Main.storyboard */; };
 		07E0FDD71943AB3E002C16FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E0FDD61943AB3E002C16FB /* AppDelegate.swift */; };
 		07E0FDD91943AB3E002C16FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E0FDD81943AB3E002C16FB /* Images.xcassets */; };
 		07E0FDE51943AB3E002C16FB /* tutorialTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E0FDE41943AB3E002C16FB /* tutorialTodoTests.swift */; };
+		07E3725A19443C1E008F56EB /* XYZAddToDoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3725919443C1E008F56EB /* XYZAddToDoItemViewController.swift */; };
+		07E37260194441F4008F56EB /* XYZToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3725F194441F4008F56EB /* XYZToDoListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0732E6EA19451DE3004E153F /* XYZToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZToDoItem.swift; sourceTree = "<group>"; };
+		0732E6EC19452398004E153F /* testTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testTableViewController.swift; sourceTree = "<group>"; };
+		07B70F911944259F009E6D29 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		07E0FDD11943AB3E002C16FB /* tutorialTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tutorialTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E0FDD51943AB3E002C16FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07E0FDD61943AB3E002C16FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +38,9 @@
 		07E0FDDE1943AB3E002C16FB /* tutorialTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tutorialTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E0FDE31943AB3E002C16FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07E0FDE41943AB3E002C16FB /* tutorialTodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorialTodoTests.swift; sourceTree = "<group>"; };
+		07E3725919443C1E008F56EB /* XYZAddToDoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZAddToDoItemViewController.swift; sourceTree = "<group>"; };
+		07E3725F194441F4008F56EB /* XYZToDoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZToDoListTableViewController.swift; sourceTree = "<group>"; };
+		07E37261194444F0008F56EB /* XYZToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZToDoListTableViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +82,15 @@
 		07E0FDD31943AB3E002C16FB /* tutorialTodo */ = {
 			isa = PBXGroup;
 			children = (
+				07B70F911944259F009E6D29 /* Main.storyboard */,
+				07E3725F194441F4008F56EB /* XYZToDoListTableViewController.swift */,
+				07E37261194444F0008F56EB /* XYZToDoListTableViewController.h */,
+				07E3725919443C1E008F56EB /* XYZAddToDoItemViewController.swift */,
+				0732E6EA19451DE3004E153F /* XYZToDoItem.swift */,
 				07E0FDD61943AB3E002C16FB /* AppDelegate.swift */,
 				07E0FDD81943AB3E002C16FB /* Images.xcassets */,
 				07E0FDD41943AB3E002C16FB /* Supporting Files */,
+				0732E6EC19452398004E153F /* testTableViewController.swift */,
 			);
 			path = tutorialTodo;
 			sourceTree = "<group>";
@@ -183,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E0FDD91943AB3E002C16FB /* Images.xcassets in Resources */,
+				07B70F921944259F009E6D29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0732E6EB19451DE3004E153F /* XYZToDoItem.swift in Sources */,
+				07E37260194441F4008F56EB /* XYZToDoListTableViewController.swift in Sources */,
 				07E0FDD71943AB3E002C16FB /* AppDelegate.swift in Sources */,
+				0732E6ED19452398004E153F /* testTableViewController.swift in Sources */,
+				07E3725A19443C1E008F56EB /* XYZAddToDoItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +399,7 @@
 				07E0FDEA1943AB3E002C16FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07E0FDEB1943AB3E002C16FB /* Build configuration list for PBXNativeTarget "tutorialTodoTests" */ = {
 			isa = XCConfigurationList;
@@ -385,6 +408,7 @@
 				07E0FDED1943AB3E002C16FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
